@@ -1,0 +1,6 @@
+[submodule "SRM-backend"]
+	path = SRM-backend
+	url = git@github.com:friendly-fly/SRM-backend.git
+[submodule "SRM-frontend"]
+	path = SRM-frontend
+	url = git@github.com:friendly-fly/SRM-frontend.git

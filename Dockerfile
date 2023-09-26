@@ -11,12 +11,12 @@ RUN pnpm run build
 FROM mrinjamul/pnpm:latest
 
 WORKDIR /app
-COPY ./package.json ./pnpm-lock.yaml ./
+COPY ./SRM-backend/package.json ./SRM-backend/pnpm-lock.yaml ./
 RUN pnpm install
 ADD SRM-backend .
 COPY --from=frontend /usr/src/app/dist /app/ui
 
-EXPOSE 3000
+EXPOSE 4000
 
 CMD ["pnpm","run","start"]
 
