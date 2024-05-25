@@ -2,7 +2,7 @@
 FROM mrinjamul/pnpm:latest as frontend
 
 WORKDIR /usr/src/app
-COPY ./SRM-frontend/package.json ./SRM-frontend/pnpm-lock.yaml ./
+COPY ./SRM-frontend/package.json ./SRM-frontend/package-lock.json ./
 RUN pnpm install
 ADD SRM-frontend .
 RUN pnpm run build
